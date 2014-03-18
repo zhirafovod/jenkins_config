@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    =
     'http://github.com/SplunkStorm/'
   s.license       = 'Apache 2.0'
+  s.add_runtime_dependency 'jenkins_api_client', '~> 1.0.0.beta.5'
 end

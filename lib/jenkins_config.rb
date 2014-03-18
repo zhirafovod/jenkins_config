@@ -15,7 +15,7 @@ class JenkinsConfig
     
     def initialize
       @client = JenkinsApi::Client.new(
-          :server_ip => ENV['jenkins_config_host'], 
+          :server_ip => ENV['jenkins_config_host'] || "localhost",  
           :username => ENV['jenkins_config_username'], 
           :password => ENV['jenkins_config_password']
         )
